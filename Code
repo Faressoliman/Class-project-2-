@@ -1,0 +1,33 @@
+import turtle as t
+import time
+
+# Set up the Turtle window
+t.bgcolor("white")
+t.title("Stock Market Price Predictor")
+t.speed(1)
+
+# Define the red-orange color palette
+red_orange_palette = ["darkorange", "red"]
+
+# Set pen size and color
+t.pensize(10)
+t.color(red_orange_palette[1], red_orange_palette[0])  # Using red as pen color and orange as fill color
+
+# Move to starting position
+t.penup()
+t.goto(-180, 90)
+t.pendown()
+
+# Begin filling shape
+t.begin_fill()
+
+# Draw a square
+for _ in range(4):
+    t.forward(100)
+    t.right(90)
+
+# End filling shape
+t.end_fill()
+
+# Hold the window open for 5 seconds
+time.sleep(5)
